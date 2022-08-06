@@ -8,8 +8,8 @@ class SectionsPagerAdapter(activity: AppCompatActivity): FragmentStateAdapter(ac
     override fun createFragment(position: Int): Fragment {
         var fragment: Fragment? = null
         when(position){
-            1 -> fragment = HomeFragment()
-            2 -> fragment = ProfileFragment()
+            0 -> fragment = HomeFragment()
+            1 -> fragment = ProfileFragment()
         }
 
         return fragment as Fragment
